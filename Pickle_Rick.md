@@ -85,7 +85,7 @@ commands to be executed on the server.
 ---
 
 ## Step 5: Ingredient Collection
-###Ingredient 1
+### Ingredient 1
 Listing files revealed the first ingredient.
 
 ```bash
@@ -95,7 +95,7 @@ less Sup3rS3cretPickl3Ingred.txt
 ```
 The cat command was restricted, but less was used to read the file.
 
-## Ingredient 2
+### Ingredient 2
 Exploring user directories led to the second ingredient.
 
 ```bash
@@ -108,8 +108,8 @@ less "/home/rick/second ingredients"
 
 ---
 
-##Step 6: Privilege Escalation
-###Checking sudo Permissions
+## Step 6: Privilege Escalation
+### Checking sudo Permissions
 ```bash
 sudo -l
 ```
@@ -119,7 +119,7 @@ Output:
 This configuration allows execution of any command as root without authentication,
 which is a critical security misconfiguration.
 
-###Root Access & Final Ingredient
+### Root Access & Final Ingredient
 ```bash
 sudo ls /root
 
@@ -127,7 +127,7 @@ less /root/3rd.txt
 ```
 The third and final ingredient was retrieved from the root directory.
 
-##Conclusion
+## Conclusion
 This room demonstrates how information disclosure, weak access controls, and
 misconfigured sudo permissions can lead to complete system compromise.
 
